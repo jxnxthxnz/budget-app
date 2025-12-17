@@ -3,7 +3,7 @@ const cors = require('cors'); //loads cors library
 const { initializeDatabase, addTransaction, getTransactions, getBalance } = require('./database');
 
 const app = express(); //express application instance, object that represents web server
-const PORT = 5000;
+const PORT = 5001;
 
 app.use(cors()); //allows react app on port 3000 to make requests to this port 5000
 app.use(express.json()); //allow server to read json data from request bodies
