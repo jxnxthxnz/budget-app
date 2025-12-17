@@ -80,4 +80,4 @@ npm start
 
 The app will automatically open at `http://localhost:3000`
 
-
+![Screenshot of Budget Tracker](screenshot.png)
