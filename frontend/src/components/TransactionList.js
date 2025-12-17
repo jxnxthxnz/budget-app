@@ -23,7 +23,7 @@ function TransactionList({ transactions }) {
     return (
       <div className="transaction-list empty">
         <div className="empty-state">
-          <p>💸 No transactions yet</p>
+          <p>No transactions yet</p>
           <p>Add your first deposit or expense above!</p>
         </div>
       </div>
@@ -43,7 +43,7 @@ function TransactionList({ transactions }) {
             className={`transaction-item ${transaction.type}`}
           >
             <div className="transaction-icon">
-              {transaction.type === 'deposit' ? '💰' : '💸'}
+              {transaction.type === 'deposit' ? '✅' : '‼️'}
             </div>
             
             <div className="transaction-details">
