@@ -4,7 +4,7 @@ import TransactionForm from './components/TransactionForm';
 import TransactionList from './components/TransactionList'
 import './App.css';
 
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'http://localhost:5001/api';
 
 function App() {
   const [transactions, setTransactions] = useState([]); //array of all transactions
@@ -46,7 +46,7 @@ function App() {
 
   const addTransaction = async (transactionData) => {
     try {
-      const response = await axios.post(`${API_BASE_URL}/transactions`);
+      const response = await axios.post(`${API_BASE_URL}/transactions`, transactionData);
 
       if (response.status === 201) { //successfully created transaction
         await fetchTransactions(); //refresh ui and reloads
