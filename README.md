@@ -46,7 +46,7 @@ This installs:
 
 ### 3. Install Frontend Dependencies
 ```bash
-cd ../frontend
+cd frontend
 npm install
 ```
 
